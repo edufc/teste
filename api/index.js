@@ -30,7 +30,7 @@ app.post('/', (req, res) => {
     console.log('IPv6:', ipv6);
     console.log('Received data:', data);
 
-    res.status(202).send({
+    res.status(500).send({
         message: 'Logged your IP addresses and received your data',
         ipv4,
         ipv6,
